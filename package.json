@@ -1,0 +1,29 @@
+{
+  "name": "browser-fetch",
+  "version": "0.0.1",
+  "description": "browser-fetch",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkiv/browser-fetch.git"
+  },
+  "private": "true",
+  "author": "Paul Klein <paul@browserbase.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pkiv/browser-fetch/issues"
+  },
+  "homepage": "https://github.com/pkiv/browser-fetch#readme",
+  "dependencies": {
+    "@browserbasehq/sdk": "^2.0.0",
+    "dotenv": "^16.4.7",
+    "playwright-core": "^1.43.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  }
+}
