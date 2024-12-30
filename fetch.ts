@@ -68,7 +68,7 @@ export async function playwrightFetch(url: string) {
     let finalResponse = response;
 
     // Check if we hit a Cloudflare challenge
-    if (response?.status() === 403 || response?.headers()['server']?.toLowerCase().includes('cloudflare')) {
+    if (response?.headers()['cf-mitigated'] === 'challenge' || response?.status() === 403) {
       console.log("Detected Cloudflare challenge, waiting for solution...");
       
       // Wait for the captcha solved message or timeout after 30 seconds
